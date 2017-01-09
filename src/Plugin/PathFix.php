@@ -32,17 +32,17 @@ class PathFix
         return $this->write->getAbsolutePath($result);
     }
 
-    /**
-     * Forces output to be an absolute path.
-     *
-     * @param Uploader $subject
-     * @param $result
-     * @return string
-     */
-    public function afterGetDestDir(Uploader $subject, string $result)
-    {
-        return $this->write->getAbsolutePath($result);
-    }
+//    /**
+//     * Forces output to be an absolute path.
+//     *
+//     * @param Uploader $subject
+//     * @param $result
+//     * @return string
+//     */
+//    public function afterGetDestDir(Uploader $subject, string $result)
+//    {
+//        return $this->write->getAbsolutePath($result);
+//    }
 
     /**
      * Iterates through some common prefixes to see if one matches a directory structure.
