@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="\Magento\CatalogImportExport\Model\Import\Uploader">
+        <plugin name="SwiftOtter_ImageImportPathFix" type="\SwiftOtter\ImageImportPathFix\Plugin\PathFix" sortOrder="10" />
+    </type>
+    <type name="\SwiftOtter\ImageImportPathFix\Plugin\PathFix">
+        <arguments>
+            <argument name="write" xsi:type="object">\Magento\Framework\Filesystem\Directory\Write</argument>
+        </arguments>
+    </type>
+</config>
