@@ -2,9 +2,7 @@
   "name": "swiftotter/image-import-path-fix",
   "description": "N/A",
   "require": {
-    "php": "~7.0.0",
-    "magento/framework": "100.1.*",
-    "lib-libxml": "*"
+    "php": "~7.0.0"
   },
   "type": "magento2-module",
   "version": "1.1",
